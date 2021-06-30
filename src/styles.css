@@ -1,0 +1,416 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+
+
+::placeholder , p ,select , option ,button , b , i{font-family: "Raleway-regular";}
+ a, h4, h6{font-family: "Raleway-semibold";}
+.featured-services .icon-box {
+    padding: 12px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+  }
+  .icon-box2{
+    background: rgb(236, 232, 232);
+    padding: 20px;
+  }
+
+.who-do{
+  background-color: rgb(207, 205, 205);
+}
+  .featured-services .icon-box::before {
+    content: '';
+    position: absolute;
+    background: #cbe0fb;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+  }
+  
+  .featured-services .icon-box:hover::before {
+    background: #106eea;
+    top: 0;
+    border-radius: 0px;
+  }
+  .text-blue{
+    color:rgb(71, 71, 251);
+}
+.bg-img-1{
+ /*  background-image: linear-gradient(to right, rgb(235, 48, 252), rgb(104, 55, 238));
+   */background-image: url('assets/bg (4).jpg');
+  background-size: 100% 100%;
+}
+  .bg-gray{
+    background-color: rgb(233, 232, 232);
+  }
+  .light-gray{
+    color: rgb(187, 182, 182);
+}
+  .featured-services .icon {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #page{
+    -webkit-box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+    box-shadow: 5px 5px 0px 0px #289FED, 10px 10px 0px 0px #5FB8FF, 15px 15px 0px 0px #A1D8FF, 20px 20px 0px 0px #CAE6FF, 25px 25px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+  .featured-services .icon i {
+    font-size: 33px;
+    line-height: 1;
+    color: #106eea;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .featured-services .title {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+ 
+  .featured-services .title a {
+    color: #111;
+  }
+  
+  .featured-services .description {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 0;
+  
+  }
+  
+  .featured-services .icon-box:hover .title a, .featured-services .icon-box:hover .description {
+    color: #fff;
+  }
+  
+  .featured-services .icon-box:hover .icon i {
+    color: #fff;
+  }
+  
+  /*--------------------------------------------------------------
+  # About
+  --------------------------------------------------------------*/
+  .about .content h3 {
+    font-weight: 600;
+    font-size: 26px;
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 35px;
+  }
+  
+  .about .content ul li:first-child {
+    margin-top: 35px;
+  }
+  
+  .about .content ul i {
+    background: #fff;
+    box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+    font-size: 24px;
+    padding: 20px;
+    margin-right: 15px;
+    color: #106eea;
+    border-radius: 50px;
+  }
+  
+  .about .content ul h5 {
+    font-size: 18px;
+    color: #555555;
+  }
+  
+  .about .content ul p {
+    font-size: 15px;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+
+  /*----------*/
+
+
+
+  .btn-arrow-right{
+    position: relative;
+    padding-right: 18px;
+ }
+ 
+  .btn-arrow-right:after {
+    content: "";
+    position: absolute;
+    top:7px;
+    right:-12px;
+    width: 26px;
+    height: 26px;
+    background: inherit;
+    border: inherit;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-radius: 0px 4px 0px o0px;
+    -webkit-border-radius: 0px 4px 0px 0px;
+    -moz-border-radius: 0px 4px 0px 0px;
+ }
+ h1,h2,h3{
+  font-family: "Raleway-extrabold";
+ }
+ .btn-top{
+  background-color: #13355b;
+}
+.text-top{
+  color: #13355b;
+}
+
+ .wall{
+   /*background-image: url("assets/SVG_Icon/Consumer\ Good\ \(W\).svg");*/
+   background-image: url("assets/clients/soo.jpg");
+   background-size: 100% 100%;
+ }
+ .wall2{
+  background-image: url("assets/clients/deep5.png");
+  background-size: 100% 100%;
+}
+
+.R-R{font-family: "Raleway-regular";}
+p{font-family: "Raleway-regular";}
+.d2 .nav-item .nav-link {
+  background-color:none;
+}
+
+
+.cci{
+  background-image: url('assets/clients/hero-img.png');
+  background-size: 100% 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cco{
+  background-color: rgba(14, 1, 59, 0.9);
+}
+.cco ul li{
+  background-color: transparent;
+  border: 1px solid white;
+  font-weight: bolder;
+}
+.read-body-color{
+  background-color:rgba(234, 210, 241, 0.3);
+}
+.read-color{
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(90deg ,rgb(210,220,241),#23afe4);
+}
+.blue-shade{
+  background-color: rgba(32, 32, 245, 0.4);
+}
+ .zoom:hover{
+  transition-duration: 1.2s;
+  transform: scale(1.2);
+ }
+ .move:hover{
+  transition-duration: 1s;
+  transform: rotate(10deg);
+  transform: rotate(-10deg);
+ }
+ .zoom2:hover{
+  transition-duration: 1.2s;
+  transform: scalex(0.9);
+ }
+ .cross{
+   transform: skewX(-10deg);
+ }
+ .light>img:hover{
+   transition-duration: 1s;
+   border:2px solid orange;
+ }
+ #cool{
+  background-image: url("assets/clients/bgg.png");
+  background-size: 100% 100%;
+ }
+ .btn-arrow-right:before {
+     content: "";
+     position: absolute;
+     top:4px;
+     left:-13px;
+     width: 28px;
+     height: 28px;
+     background: white;
+     border: inherit;
+     border-left-color: transparent;
+     border-bottom-color: transparent;
+     border-radius: 0px 4px 0px 0px;
+     -webkit-border-radius: 0px 4px 0px 0px;
+     -moz-border-radius: 0px 4px 0px 0px;
+  }
+ .btn-arrow-right:after,.btn-arrow-right:before {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+ }
+ .halp-img{
+  background-image: url('assets/clients/enjoy.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.b-color{
+  background-color: rgba(0,0,0,0.5);
+}
+.contact_img{
+ background-image: url('assets/bg.jpg');
+ background-size: 100% 60%;
+ background-repeat: no-repeat;
+}
+.shadow-my{
+  -webkit-box-shadow: 5px 5px 0px 0px rgb(190, 179, 179), 10px 10px 0px 0px #CAE6FF, 15px 15px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 5px 5px 0px 0px rgb(206, 200, 200), 10px 10px 0px 0px #CAE6FF, 15px 15px 0px 0px #E1EEFF, 5px 5px 15px 5px rgba(0,0,0,0);
+  }
+.contact_img2{
+  background-image: url('assets/bg.jpg');
+  background-size: 55% 100%;
+  background-repeat: no-repeat;
+  background-position: center left;
+ }
+
+.artical-img{
+  background-image: url('assets/bg.jpg');
+  background-size: 100% 15%;
+  background-repeat: no-repeat;
+ }
+ .ft-1{
+   font-family: 'Comic Sans MS';
+ }
+ .indent1{
+   text-indent: 50px;
+ }
+  /*-------*/
+.f-0{
+  font-size: 13px;
+}
+.f-1{
+  font-size: 16px;
+}
+.f-2{
+  font-size: 18px;
+}
+.c-0 {
+  background-color: #404040;
+
+}
+.choose{
+  background-image: url("assets/env2.jpg");
+  background-size: 100% 100%;
+}
+
+#my-banner{
+  height: 70vh;
+ 
+}
+
+
+/* font */
+a , a:hover{
+  text-decoration: none !important;
+}
+@media screen and (max-width: 370px) {
+  .myborder{
+    width: 50%;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .myborder{
+    width: 100px;
+    height: 50px;
+  }
+  p{
+    font-size: 11px;
+  }
+  a{
+    font-size: 14px;
+  }
+  h1{
+    font-size:24px ;
+  }
+  h2{
+    font-size:22px ;
+  }
+h3{
+  font-size: 20px;
+}
+h4{
+  font-size: 18px;
+}
+h5{
+  font-size: 16px;
+}
+h6{
+  font-size: 14px;
+}
+.move{
+  width: 64%;
+  height: 40vh;
+}
+.category-box div div{
+  margin-bottom: 30px;
+}
+.t-somall div ,.zoom{
+  margin-bottom: 30px;
+}
+
+}
+@media screen and (max-width: 768px) {
+  .category-box div div{
+    margin-bottom: 40px;
+  }
+  h1{
+    font-size:22px ;
+  }
+  h2{
+    font-size:20px ;
+  }
+h3{
+  font-size: 18px;
+}
+h4{
+  font-size: 14px;
+}
+h5{
+  font-size: 12px;
+}
+h6{
+  font-size: 10px;
+}
+.move{
+  width: 64%;
+  height: 40vh;
+}
+}
+
+@media screen and (max-width: 540px) {
+  .t-somall div ,.zoom{
+    margin-bottom: 25px;
+  }
+ .move{
+  width: 64%;
+  height: 40vh;
+}
+}

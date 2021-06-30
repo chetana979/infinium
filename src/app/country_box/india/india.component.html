@@ -1,0 +1,76 @@
+
+
+
+<div class="card">
+    <img class="card-img-top" src="assets/clients/feedback-slider1.jpg" alt="image" height="390" width="100%">
+    <div class="card-img-overlay d-flex align-items-center justify-content-center">
+      <h1 class="text-center text-white">Country Research Reports</h1>
+    </div>
+  </div>
+<div class="">
+    <section class="row m-1">
+        <div class="col-md-3 p-2  ">
+        <br><br>
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                  <a class="nav-link btn-arrow-right px-4 m-1 bg-warning active" data-toggle="pill" href="#home">All</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-arrow-right px-4 m-2 bg-warning" >Automotive, Aerospace & Defence</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-arrow-right px-4 m-2 bg-warning" > Agriculture & Agrochemical</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-arrow-right px-4 m-2 bg-warning" > Consumer Goods & Packaging</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-arrow-right px-4 m-2 bg-warning" > Chemicals & Specialty Materials</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-arrow-right px-4 m-2 bg-warning" >Electronics , ICT & Semiconductors</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-arrow-right px-4 m-2 bg-warning" >Energy , Infrastructure and Mining</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-arrow-right px-4 m-2 bg-warning" > Food & Beverage Industry</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link btn-arrow-right px-4 m-2 bg-warning" > Healthcare & Medical Devices</a>
+                </li>
+            
+            </ul>
+        </div>
+        <div class="col-md-8">
+            <div class="tab-content">
+                <div id="home" class=" tab-pane active"><br>
+                       <h3 class="text-center ">ArjunDeep India Country Research Reports</h3>
+                       
+                       <div class="card mb-1" *ngFor="let aa of arr">
+                           <div class="card-body text-justify">
+                               <h5><a href="">{{aa.Report_title}}.</a></h5>
+                               <p class="light-gray"><i class="fa fa-image"></i> {{aa.Publish_date}} Report Code: {{aa.SKU}} <i class="fa fa-file-text"></i> {{aa.No_of_Pages}}</p>
+                               <p>{{aa.Meta_description}}. </p>
+                               <a href="" class="btn btn-outline-warning btn-sm">Read More</a>
+                           </div>
+                       </div> 
+
+                       <div class=" p-5">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item "><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item "><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">7</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                          </ul>
+                    </div>
+                </div>                               
+            </div>
+        </div>
+    </section>
+  </div>

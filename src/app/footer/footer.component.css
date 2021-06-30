@@ -1,0 +1,32 @@
+
+.mantain-by{
+    background-color: rgb(25, 25, 48);
+    color: white;
+}
+.footer-section a{
+    color: black;
+}
+.footer-section .fa{
+    
+    width: 35px;
+    height: 35px;
+    border: 2px solid rgb(207, 205, 205);
+    border-radius: 50%;
+    padding: 6px;
+    font-size: 20px;
+    margin-right: 18px;
+    text-decoration: none;
+}
+.footer-section .fa{color:white;}
+.fa-phone{background-color: rgb(89, 251, 102) !important;}
+.fa-map-marker{background-color: red!important;}
+.fa-arrow-right{background-color: rgb(134, 14, 233) !important;;}
+.fa-facebook{background-color:rgb(35, 7, 87)!important;}
+.fa-whatsapp{background-color:rgb(14, 250, 92)!important;}
+.fa-twitter{background-color:rgb(0, 195, 255)!important;}
+.fa-youtube{background-color:rgb(241, 54, 54)!important;}
+.fa-instagram{background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%)!important;}
+.fa-linkedin{background-color:rgb(5, 21, 92)!important;}
+.fa-skype{background-color:#00aff0!important;}
+.fa-envelope-o{background-color:rgb(248, 24, 200)!important;}
+.fa-pinterest{background-color:rgb(235, 35, 44)!important;}

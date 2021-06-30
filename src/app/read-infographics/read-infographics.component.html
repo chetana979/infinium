@@ -1,0 +1,28 @@
+<section class="row m-1" *ngFor="let aa of all_data">
+    <h4 class="p-2" innerHTML="{{aa.title}}"></h4>
+<div class="row m-1" >
+    
+       
+        <div class="col-md-2">
+            <a class="btn btn-white deep2 shadow  btn-outline-warning btn-block" (click)="send_id1(this.aa.id)">Request Sample</a>  
+            <a class="btn btn-white deep2 shadow  btn-outline-warning btn-block" (click)="send_id2(this.aa.id)">Request Detailed TOC</a>  
+            <a class="btn btn-white deep2 shadow  btn-outline-warning btn-block" (click)="send_id3(this.aa.id)">Customization Request</a>
+        </div>    
+    <div class="col-md-10">
+        <img src="{{aa.image_path}}" alt="" width="100%">
+<div innerHTML="{{aa.id}}"></div>
+
+<div innerHTML="{{aa.meta_title}}"></div>
+<div innerHTML="{{aa.meta_description}}"></div>
+<div innerHTML="{{aa.meta_keyword}}"></div>
+<div innerHTML="{{aa.url_path}}"></div>
+<div innerHTML="{{aa.description}}"></div>
+<div innerHTML="{{aa.name}}"></div>
+<div innerHTML="{{aa.image_path}}"></div>
+<div innerHTML="{{aa.type}}"></div>
+<div innerHTML="{{aa.size}}"></div>
+<div innerHTML="{{aa.status}}"></div>
+<div innerHTML="{{aa.created_at}}"></div>
+    </div>
+</div>  
+</section>

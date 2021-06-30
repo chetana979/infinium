@@ -1,0 +1,15 @@
+.radius-1{
+    border-radius: 20px;
+}
+.mycolor2{
+    background-image: linear-gradient(to right, lightgreen,#2c96f2);
+}
+input ,textarea{
+    border:none; outline: none;
+    border-bottom: 2px solid lightgray;
+    background-color: transparent;
+}
+
+.btn{
+    border-radius: 30px;
+}

@@ -1,0 +1,63 @@
+.right-line{
+    border-right:5px solid rgb(195, 183, 179);
+}
+.left-line{
+    border-left:5px solid rgb(207, 198, 195);
+}
+.odd{
+   color:rgb(136, 120, 115);
+   font-weight: bold;
+}
+.Statistics .fa{
+    font-size: 50px;
+}
+
+
+.choose p{
+    text-indent: 100px;
+    font-size: 20px;
+}
+.choose p::first-letter{
+    font-size: 30px;
+    
+}
+.vision{
+    background:cyan;
+    background-size: 100% 100%;
+}
+.vision p{
+    font-size: 20px;
+}
+.who-we-are{
+    background-color:#36cabe;
+    
+}
+
+.we-offer h4{
+    color: rgb(9, 204, 238);
+}
+.we-offer h4::after{
+    content: '';
+    display: block;
+    width: 40%;
+    height: 2px;
+    background-color:rgb(9, 204, 238);   
+}
+.clients{
+    border:1px solid lightgrey;
+}
+#client-size .carousel-item{
+    height: 120px;
+}
+
+.carousel-control-prev ,.carousel-control-next{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color:rgb(184, 168, 168);
+}
+@media screen and (max-width: 480px) {
+    .vision{
+        background-color: cyan;
+    }
+}

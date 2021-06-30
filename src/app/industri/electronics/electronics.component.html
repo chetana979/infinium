@@ -1,0 +1,32 @@
+   
+<img src="assets/Electronics, ICT & Semiconductors.jpg" alt="" width="100%" height="400">
+<section class="">
+  <div class="container text-center">
+      <h2>Electronics, ICT & Semiconductors</h2>
+      <p>We at Infinium Global Research offer consulting and customized reports in the Electronics, ICT & Semiconductors industries!
+      </p>
+  </div>
+</section> 
+
+<section class="container p-0">
+  <div class="row m-1 border border-primary" *ngFor="let aa of arr  | paginate:{itemsPerPage:10, currentPage:p }">
+    <div class="col-md-3  p-3 border">
+     <p class="light-gray"><i class="fa fa-calendar pr-2"></i>{{aa.Publish_date}}</p>
+      <h6>USD: ${{aa.Single_user}}/ INR: ₹363317.15</h6>
+    </div>
+    <div class="col-md-9 border text-justify">
+      <a href="">{{aa.Report_title}}</a>
+      <div class="text-right">
+        <button class="btn btn-outline-warning btn-sm" (click)="send_id(this.aa.Report_id)">Read More ..</button>
+
+      </div>
+    </div>
+  </div>
+
+  <pagination-controls (pageChange)="p = $event" class="float-right p-3"></pagination-controls>
+  <div class=" p-5"></div>
+  
+  
+  
+</section>
+<!--<img src="https://dbtagriculture.bihar.gov.in/MediaGallery/mandi.jpg" alt="" width="100%" height="400">-->

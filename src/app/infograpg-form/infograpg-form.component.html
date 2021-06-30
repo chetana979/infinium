@@ -1,0 +1,139 @@
+
+<section *ngFor="let ff of Req_id">
+    <div class=" pt-4" style="background-color:rgb(249, 249, 249);">
+      <section class="read-color" >
+        <div class="pl-3 pt-2">
+          <h4 id="title">{{ff.title}}</h4>
+        </div>
+        <div class="">
+           <div class="">
+            <!-- <div class="btn-group btn-group-md mx-2">
+              <a href="" class="btn font-weight-bolder ">Request Sample </a>
+              <a href="" class="btn btn-top">
+                <i class="fa fa-file-text-o"></i>
+              </a>
+            </div>
+            <div class="btn-group btn-group-md mx-2">
+              <a href="" class="btn font-weight-bolder ">Enquiry Before Buying</a>
+              <span class="btn btn-top ">
+                <i class="fa fa-exclamation-circle"></i>
+              </span>
+            </div> -->
+            <div class="">
+              <span class="px-4"><b class="text-top"> Published :</b> {{ff.created_at}}</span>
+              <span class="px-4"><b class="text-top"> Rep Id :</b> {{ff.id}}</span>
+              <span class="px-4"><b class="text-top"> Status :</b> {{ff.status}}</span>
+             <span class="px-4"><b class="text-top">Format: </b><img src="assets/clients/format-png.png" alt="i" width="90" height="20"> </span>
+             
+            </div>
+           </div>
+         </div>
+        
+        </section>
+        <div class="p-3 text-center">
+          <div class="btn-group btn-group-sm ">
+            <span class="btn btn-top ">
+              <i class="fa fa-mail-reply"></i>
+            </span>
+            <a [routerLink]="'/second_re'"  class="btn btn-warning btn-sm ">Go back To Report</a>
+          </div>
+        </div>
+       
+        <section class="p-0">
+          
+          <div class="row mx-1 justify-content-center">
+            <div class="col-md-4 bg-warning shadow-lg align-items-center d-flex justify-content-center">
+                <img src="assets/clients/form_png.png" alt="d" width="70%" height="70%">
+            </div>
+            
+            <div class="col-md-6 bg-white shadow-lg p-4">
+                <h3 class="text-center">{{formTitle}} </h3>
+              <form method="post" role="form" [formGroup]="Requestform" (ngSubmit)="onSubmit()">
+                <div class="row ">
+                  <div class="col-md-12">
+                    <input type="hidden"  formControlName="title" [(ngModel)]="ff.title" class="form-control">
+                  </div>
+                  <div class=" col-md-6 form-group">
+                    <input type="text" formControlName="name" class="form-control b-none" [ngClass]="{ 'is-invalid': submitted && f.name.errors }"  placeholder="Enter Name..."/>
+                    <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                        <div *ngIf="f.name.errors.required">Name is required</div>
+                    </div>      
+                  </div>
+                  <div class=" col-md-6 form-group">
+                    <input type="email" formControlName="email" class="form-control b-none" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"  placeholder="Enter Email..."/>
+                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                        <div *ngIf="f.email.errors.required">Email is required</div>
+                    </div>
+                  </div>
+                  <div class=" col-md-6 form-group">
+                     <input type="text" formControlName="company" class="form-control b-none" [ngClass]="{ 'is-invalid': submitted && f.company.errors }"  placeholder="Company Name..."/>
+                    <div *ngIf="submitted && f.company.errors" class="invalid-feedback">
+                        <div *ngIf="f.company.errors.required">Company is required</div>
+                    </div>
+                  </div>
+                  <div class=" col-md-6 form-group">
+                    <select class="form-control b-none" formControlName="country"   [ngClass]="{ 'is-invalid': submitted && f.country.errors }" placeholder="Select your Category">
+                      <option value="no" selected>Select Country  </option>
+                      <option value="India">India</option>
+                      <option value="USA">USA</option>
+                      <option value="France">France</option>
+                      <option value="Africa">Africa</option>
+                      <option value="Chain">Chain</option>
+                      <option value="Canada">Canada</option>
+                      <option value="Japan">Japan</option>
+                    </select>
+                    <div *ngIf="submitted && f.country.errors" class="invalid-feedback">
+                      <div *ngIf="f.country.errors.required">Country is required</div>
+                  </div>
+                  </div>
+                    <div class="col-md-6 form-group">
+                      <input type="tel" formControlName="contact" class="form-control b-none" [ngClass]="{ 'is-invalid': submitted && f.contact.errors }"  placeholder="Contact No..."/>
+                      <div *ngIf="submitted && f.contact.errors" class="invalid-feedback">
+                          <div *ngIf="f.contact.errors.required">Contact is required</div>
+                      </div>
+                      </div>
+                      <div class="col-md-6 form-group">
+                        <input type="text" formControlName="profession" class="form-control b-none" [ngClass]="{ 'is-invalid': submitted && f.profession.errors }"  placeholder="Enter Profession ..."/>
+                        <div *ngIf="submitted && f.profession.errors" class="invalid-feedback">
+                            <div *ngIf="f.profession.errors.required">Profession is required</div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class=" form-group">
+                    <textarea formControlName="message" class="form-control b-none" [ngClass]="{ 'is-invalid': submitted && f.message.errors }"  placeholder="Enter  Message..." rows="3" ></textarea>
+                    <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                      <div *ngIf="f.message.errors.required">Message is required</div>
+                     </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                        <div class="input-group mb-3 input-group-sm">
+                          <input type="text" class="form-control" value="4243" readonly>
+                          <div class="input-group-append">
+                            <span class="input-group-text"><i class="fa fa-refresh"></i></span>
+                         </div>
+                       </div>
+                      </div>
+                      <div class="col-md-6 form-group">
+                        <div class="input-group mb-3 input-group-sm">
+                          <input type="text" class="form-control" placeholder="Enter Captacher Code">
+                          <div class="input-group-append">
+                            <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                         </div>
+                      
+                      </div>
+                  </div>
+                  <div class=" text-center">
+                    <input type="submit" value="Submit" class="btn btn-warning btn-sm text-white px-3 m-1">
+                    <input type="reset" value="Cancle" class="btn btn-top btn-sm px-3 m-1">
+                    
+                  </div>
+                </div>
+              </form>
+            </div>
+      
+          </div>
+        </section>
+      </div>
+
+</section>

@@ -1,0 +1,164 @@
+<br>
+<section *ngFor="let bb of all_data">
+<div class="pt-2 pl-3 bg-rd">
+  <div class="row mx-1 p-2">
+    <div class="col-md-5">
+      <a href="">Home <i class="fa fa-angle-right"></i> Chemicals & Materials  <i class="fa fa-angle-right"></i> Water Soluble Fertilizers Market</a>
+    </div>
+    <div class="col-md-7">
+    </div>
+   </div>
+</div>
+<div class="read-img">
+<section class="read-color">
+  <div class="row mx-1">
+  <div class="col-md-9">
+<div class="pl-3 pt-2">
+
+  <h4> {{bb.title}}</h4>
+ 
+</div>
+<div class="">
+   <div class="">
+    <div class="">
+      <span class="px-4"><b class="text-top"> Published :</b> {{bb.publish_date}}</span>
+      <span class="px-4"><b class="text-top"> Rep Id :</b> {{bb.id}}</span>
+      <span class="px-4"><b class="text-top"> Category</b> :{{bb.category}}</span>
+  </div> 
+   </div>
+ </div>
+</div>
+<div class="col-md-3"></div>
+</div>
+
+</section>
+</div>
+<!--Head part Title section-->
+
+<section class="py-2">
+    <div class="row m-1">
+      <div class="col-md-9 ">
+            
+    <div class=" row m-1">
+     
+      <div class="col-md-12 ">
+          
+
+              <ul class="nav nav-pills  R-R  d2" role="tablist">
+                <li class="nav-item">
+                  <div class=" btn-group nav-link active " data-toggle="pill" href="#Overview">
+                    <span class="btn bg-success deep  shadow">
+                      <i class="fa fa-file-text-o"></i>
+                    </span>
+                    <a class="btn btn-white deep2 shadow  btn-outline-success">Overview</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class=" btn-group nav-link  " data-toggle="pill" href="#menu1">
+                    <span class="btn bg-warning deep  shadow">
+                      <i class="fa fa-th-list"></i>
+                    </span>
+                    <a class="btn btn-white deep2 shadow  btn-outline-warning">Table of Content</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class=" btn-group nav-link " >
+                    <span class="btn bg-danger deep  shadow">
+                      <i class="fa fa-book"></i>
+                    </span>
+                    <a class="btn btn-white deep2 shadow  btn-outline-danger" (click)="send_id1(this.bb.id)">Request Sample</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <div class=" btn-group nav-link  " >
+                    <span class="btn bg-info deep shadow">
+                      <i class="fa fa-user"></i>
+                    </span>
+                    <a class="btn btn-white deep2 shadow  btn-outline-info" (click)="send_id2(this.bb.id)">Request Detailed TOC</a>
+                  </div>
+                </li><li class="nav-item">
+                  <div class=" btn-group nav-link " >
+                    <span class="btn btn-primary deep shadow ">
+                      <i class="fa fa-exclamation-circle"></i>
+                    </span>
+                    <a class="btn btn-white deep2 shadow  btn-outline-primary" (click)="send_id3(this.bb.id)">Customization Request</a>
+                  </div>
+                </li>
+                 
+                 
+              </ul>
+      </div>
+  </div>
+
+  <section class="py-2">
+      <div class="tab-content border border-info">
+          <div id="Overview" class="container tab-pane active"><br>
+            <h2 class="text-center"> Overview</h2>
+              
+  <div innerHTML="{{bb.meta_title}}"> </div>
+  <div innerHTML="{{bb.short_description}}"> </div>
+  <div innerHTML="{{bb.description}}"> </div>
+ 
+          </div>
+          <!-- Table of content section is started -->
+          <div id="menu1" class="container tab-pane fade"><br>
+            <h3 class="text-center"> Table of Content</h3>
+           
+            <div innerHTML=" {{bb.table_contents}}">
+
+            </div>
+          </div>
+          <!-- request sample section is started -->
+        </div>
+  </section>
+
+
+
+      </div>
+      <div class="col-md-3 " >
+          
+          <div class="card cci text-center text-white shadow-lg R-R lic">
+            <div class="cco">
+              <div class="card-body">
+                <h5>Choose License Type</h5>
+                  <h2 class="">$ 4,795</h2>
+                  <a href="" class="btn btn-top m-1 btn-sm">USA ( <i class="fa fa-dollar"></i> )</a>
+                  <a href="" class="btn btn-top m-1 btn-sm">INR ( <i class="fa fa-inr"></i> )</a>
+                  <form class="text-left">
+                      
+                          <div class="form-check">
+                              <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio">1 to 5 Users - $ {{bb.single_user_price}} 
+                              </label>
+                          </div>
+          
+                          <div class="form-check py-2">
+                              <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio">Enterprise License - $ {{bb.enterprise_price}} 
+                              </label>
+                          </div>
+                                        <div class="form-check">
+                              <label class="form-check-label">
+                                <input type="radio" class="form-check-input" name="optradio">Data Sheet -$2,000
+                              </label>
+                          </div>
+                        </form>   
+                        <a href="" class="btn btn-outline-warning btn-md my-1 btn-block text-white"> <i class="fa fa-shopping-bag pr-2"></i>Buy Now</a>
+                        <a href="" class="btn btn-outline-primary btn-md my-1 btn-block text-white"><i class="fa fa-tag pr-2"></i>Requst descount</a>
+                        <a href="" class="btn btn-outline-success btn-md my-1 btn-block text-white"><i class="fa fa-exclamation-circle pr-2"></i>Inquery befor Buy</a>
+        
+                     
+                
+
+              </div>
+          </div>
+     
+        
+      </div>
+      </div>
+    </div>
+</section>
+</section>
+
+
+

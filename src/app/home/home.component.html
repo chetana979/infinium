@@ -1,0 +1,329 @@
+
+<header class="hero  flex items-center">
+  <div class="container">
+      <div class="welcome flex items-center">
+          <span>Welcome to</span>
+          <img src="assets/logo.png" alt="logo" width="150" height="44">
+      </div>
+      <h1>The World Best <span>Shoping</span> Website</h1>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+          been the
+          industry's standard dummy.</p>
+      <div>
+          <button class="btn btn-primary">Read More</button>
+          <button class="btn btn-secondary">Shop Now</button>
+      </div>
+      <div class="hero-image">
+          
+      </div>
+  </div>
+</header>
+      
+<section>
+  <div class="">
+    <h2 class="pb-5 text-center ">Our Featured Categories </h2>
+   
+   
+    
+    
+  <div class="row m-1 category-box ">
+    <div class="col d-flex align-items-stretch">
+      <div class=" text-center border-dark shadow-lg bx " [routerLink]="['/automotive']">
+        <img src="assets/CA_icon (7).png" alt="servicess" width="50%" height="50%"><br>
+        <b>Automotive, Aerospace & Defence</b>
+      </div>
+    </div>
+    <div class="col d-flex align-items-stretch">
+      <div class=" text-center border-dark shadow bx" [routerLink]="['/agricultuer']" >
+        <img src="assets/CA_icon (6).png" alt="servicess" width="50%" height="50%"><br>
+        <b>Agriculture & Agrochemical</b>
+      </div>
+    </div>
+    <div class="col d-flex align-items-stretch">
+      <div class=" text-center border-dark shadow bx" [routerLink]="['/consumer']">
+        <img src="assets/CA_icon (8).png" alt="servicess" width="50%" height="50%"><br>
+        <b>Consumer Goods & Packaging</b>
+      </div>
+    </div>
+    <div class="col d-flex align-items-stretch">
+      <div class=" text-center border-dark shadow bx" [routerLink]="['/chemical']">
+        <img src="assets/CA_icon (9).png" alt="servicess" width="50%" height="50%"><br>
+        <b>Chemicals & Specialty Materials</b>
+      </div>
+    </div>
+    <div class="col d-flex align-items-stretch">
+      <div class=" text-center border-dark shadow bx" [routerLink]="['/electronics']">
+        <img src="assets/CA_icon (1).png" alt="servicess" width="50%" height="50%"><br>
+        <b>Electronics , ICT & Semiconductors</b>
+      </div>
+    </div>
+    <div class="col d-flex align-items-stretch">
+      <div class=" text-center border-dark shadow bx" [routerLink]="['/energy']">
+        <img src="assets/CA_icon (2).png" alt="servicess" width="50%" height="50%"><br>
+        <b>Energy , Infrastructure and Mining</b>
+      </div>
+    </div>
+    <div class="col d-flex align-items-stretch">
+      <div class=" text-center border-dark shadow bx" [routerLink]="['/healthcare']">
+        <img src="assets/CA_icon (4).png" alt="servicess" width="50%" height="50%"><br>
+        <b>Healthcare & Medical Devices</b>
+      </div>
+    </div>
+    <div class="col d-flex align-items-stretch">
+      <div class=" text-center border-dark shadow bx" [routerLink]="['/food']">
+        <img src="assets/CA_icon (3).png" alt="servicess" width="50%" height="50%"><br>
+        <b>Food & Beverage Industry</b>
+      </div>
+    </div>
+    <div class="col d-flex align-items-stretch">
+      <div class=" text-center border-dark shadow bx" [routerLink]="['/industries']">
+        <img src="assets/CA_icon (5).png" alt="servicess" width="50%" height="50%"><br>
+        <b>Industry Automation</b>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+</section>
+
+
+<div id="repo" class=" wall22">
+  <section class="blue-shadee py-2">
+ <h2 class="text-center pb-3">Our Latest Reports</h2>
+<div class="row m-1">
+  <div class="col-md-3">
+    <div class="p-2  text-center bg-white shadow" >
+      <h4>4 Reasons to choose IGR</h4>
+      <img src="assets/clients/Lg (1).png" alt="logo" width="80" height="80">
+      <p>Catered to & Trusted by Fortune 500 Companies</p>
+      <img src="assets/clients/Lg (2).png" alt="logo" width="80" height="80">
+      <p>100+ Years of Cumulative Experience in Market Research</p>
+      <img src="assets/clients/Lg (3).png" alt="logo" width="80" height="80">
+      <p>Business Partner of 1st Choice for Strategic Support</p>
+      <img src="assets/clients/Lg (4).png" alt="logo" width="80" height="80">
+      <p>Recognized & Appreciated by Leading International Brands</p>
+    <!--   <img src="assets/clients/i72.png" alt="s" width="98%" height="80%" > -->
+    </div>
+  </div>
+  <div class="col-md-9">
+  
+    <div class="new text-justify " *ngFor="let aa of fetch">
+     
+      
+      <div *ngIf="aa.Report_id  %2==0; else loggedOut">
+        <div class=" shadow p-3 my-1 bg-white" >
+          <a href="" class="f-1 text-black">{{aa.Report_title }} {{aa.Report_id}}</a> 
+          <p class=" f-0 light-gray" ><i class="fa fa-calendar"></i> {{aa.Publish_date}}. {{aa.Category_id}} : Consumer Goods and Packaging <button class="btn btn-outline-warning btn-sm ml-5" (click)="send_id(this.aa.Report_id)">Read More ..</button>
+          </p>
+          <!-- <a [routerLink]="['/read_more']" class=" btn-sm"><i class="fa fa-arrow-right "></i> Read More ...</a>
+           -->
+        </div>
+      </div>
+      
+      <ng-template #loggedOut>
+        <div class=" shadow  p-3  bg-my" >
+          <a href="" class="f-1 text-black">{{aa.Report_title}}</a> 
+          <p class=" f-0 light-gray" ><i class="fa fa-calendar"></i> {{aa.Publish_date}}. {{aa.Category_id}} : Consumer Goods and Packaging <button class="btn btn-outline-warning btn-sm ml-5" (click)="send_id(this.aa.Report_id)">Read More ..</button>
+          </p>
+           <!-- <a [routerLink]="['/read_more']" class=" btn-sm"><i class="fa fa-arrow-right "></i> Read More ...</a>
+           -->
+        </div>
+      </ng-template>
+   </div>
+   <div class="text-center">
+    <a href="" class="btn btn-infi m-2">View All Reports</a>
+   </div>
+  </div>
+</div>
+</section>
+</div>
+
+        <section class="tab-section banner shadow text-justify we-R ">
+          <div class="">    
+          <div class=" px-3">
+                  <div class="row align-items-center ">
+                    <div class="col-md-6 ">
+                      <h2 class="text-center text-infi py-1 infi-s1">Who We Are</h2>
+                      <p class="">Infinium Global Research is a business consulting and market research firm; a group of experts that caters to fulfilling 
+                        business and market research needs of leading companies in various industry verticals and business segments.
+                      </p>          
+                      <p class=" pt-4">
+                        Infinium Global Research is a Market Research and Consultancy firm based in Pune, India. We provide our clients with market information services,
+                        solutions, and reports. We cover numerous industry sectors like Automotive, Food & Beverages, Chemicals, Materials, etc. We offer a customization 
+                        option in our reports, wherein we can study and provide details about the core areas stated by our clients, and help them reach their goals.
+                          </p>
+                    </div>
+                      <div class="col-md-4 ">
+                        <video src="assets/clients/Infinium.mp4" controls class="ml-5" poster="assets/clients/who-we-are.jpg" width="95%" height="100%">
+                          <source src="assets/clients/Infinium.mp4" type="video/mp4">
+                        </video>
+                      </div>
+                  </div>
+            </div>
+            </div>
+          </section>
+          
+   
+
+          <div class="black-2 halp-img " >
+            <section class="b-color py-3">
+            <div class="  text-center py-5">
+          <h2 class=" text-white infi-s1">Company <span class="">Statistics</span></h2>
+          <p class="text-center text-white"> The following statistics will help you finetune your business.</p>
+           <div class="container text-white py-3 ">
+            <div class="row m-1 text-center  ">
+              <div class="col-md-3 d-flex align-items-stretch">
+                  <div class="p-1 text-center border-dark  w-100 ">
+                      <img src="assets/CS_Icon (2).png" alt="company" width="80" height="80">
+                      <h4>300<span class="">%</span></h4>
+                      <h5>Growth in Repository</h5>
+                  </div>
+              </div>
+              <div class="col-md-3  d-flex align-items-stretch">
+                  <div class="p-1 text-center border-dark  w-100 ">
+                    <img src="assets/CS_Icon (4).png" alt="company" width="80" height="80">
+                      <h4>100<span class="">+</span></h4>
+                      <h5>Testimonials Received</h5>
+                  </div>
+              </div> 
+              <div class="col-md-3 d-flex align-items-stretch ">
+                  <div class="p-1 text-center border-dark  w-100 ">
+                    <img src="assets/CS_Icon (3).png" alt="company" width="80" height="80">
+                      <h4>200<span class="">+</span></h4>
+                      <h5 >Happy Clients</h5>
+                  </div>
+              </div> 
+              <div class="col-md-3 d-flex align-items-stretch ">
+                  <div class="p-1 text-center border-dark  w-100 ">
+                    <img src="assets/CS_Icon (1).png" alt="company" width="80" height="80">
+                      <h4>350<span class="">+</span></h4>
+                      <h5>Upcoming Reports</h5>
+                  </div>
+              </div>
+           </div>
+           </div>
+              </div>
+          </section>
+        </div>
+
+
+          <section class=" customer ">
+            <section class="container">  
+              <h3 class="text-center  text-white infi-s1">What Our <span class="">Customers</span> Say</h3>
+              <p class="text-center">Here's what some of our customers say about our work. We appreciate all of our customers' testimonials.</p>
+              
+            <div class="row  t-somall al">
+              
+              <div class="col-md-4 d-flex align-items-stretch ">
+                <div class=" border border-white p-1 shadow">
+                  <div class="infi-p-5" style="height: 90%;">
+                    <h4>Sultan, Business Owner <small><i>- The Kingdom of, Saudi Arabia</i></small></h4>
+                    <p> <i class="fa fa-quote-left"></i> We purchased a report on Blood Collection Tube Market in Saudi 
+                      Arabia and got the customized study done from Infinium, the report
+                       is super and we loved.We also have a few questions to follow-up,
+                      the research analyst helped us to get the complete clarity.<i class="fa fa-quote-right"></i> </p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-md-4 d-flex align-items-stretch ">
+                <div class=" border border-white p-1 shadow">
+                  <div class="infi-p-5 " style="height: 90%;">
+                    <h4>Category Manager <small><i>- Germany, <br> Leading Food Products Company</i></small></h4>
+                    <p> <i class="fa fa-quote-left"></i>  I purchased corporate license for spice and herbs extracts market report.
+                      The information is highly satisfactory and it added value to my business
+                      presentation.<i class="fa fa-quote-right"></i> 
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+            
+              <div class="col-md-4 d-flex align-items-stretch ">
+                <div class=" border p-2 border-white shadow">
+                  <div class="infi-p-5" style="height: 90%;">
+                    <h4>Top Paper Manufacturer <small><i>- Co-founder, North America</i></small></h4>
+                    <p><i class="fa fa-quote-left"></i>  We have been engaged with Infinium Global Research on several research assignments.
+                      The data provided by the company is apt and accurate. I am happy to be associated
+                      with Infinium Global Research.<i class="fa fa-quote-right"></i> </p>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+            </section>
+          </section>
+
+
+
+<div class=" " >
+  <section class=" ">
+    <div class="container">
+      <h3 class="p-3 text-center ">Companies that have <span>Purchased</span> our Reports Recently</h3>
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+<!--   <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul> -->
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row m-1">
+        <div class="col-md-2">
+          <img src="assets/clients/microsoft.jpg" alt="Companies img" class="myborder zoom ttt" width="165" height="88">
+        </div>
+        <div class="col-md-2">
+          <img src="assets/clients/samsung.jpg " alt="Companies img" class="myborder zoom kkk" width="165" height="88"> 
+        </div>
+        <div class="col-md-2">
+          <img src="assets/clients/google.jpg" alt="Companies img" class="myborder zoom ttt" width="165" height="88">
+        </div>
+        <div class="col-md-2">
+          <img src="assets/clients/exxonmobil.jpg" alt="Companies img" class="myborder zoom kkk" width="165" height="88"> 
+        </div>
+        <div class="col-md-2">
+          <img src="assets/clients/linde.jpg" alt="Companies img" class="myborder ttt zoom" width="165" height="88"> 
+        </div>
+        <div class="col-md-2">
+          <img src="assets/clients/kraftheinz.jpg" alt="Companies img" class="myborder  zoom kkk" width="165" height="88"> 
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="row m-1">
+        <div class="col-md-2">
+          <img src="assets/clients/baxter.jpg" alt="Companies img" class="myborder ttt zoom" width="165" height="88"> 
+        </div>
+        <div class="col-md-2">
+          <img src="assets/clients/AsahiKASEI.jpg" alt="Companies img"  class="myborder zoom kkk" width="165" height="88">  
+        </div>
+        <div class="col-md-2">
+          <img src="assets/clients/lilly.jpg" alt="Companies img" class="myborder ttt zoom" width="165" height="88">
+        </div>
+        <div class="col-md-2">
+          <img src="assets/clients/teleflex.jpg" alt="Companies img" class="myborder kkk zoom" width="165" height="88"> 
+        </div>
+        <div class="col-md-2">
+          <img src="assets/clients/McKinsey.jpg" alt="Companies img" class="myborder ttt zoom" width="165" height="88"> 
+        </div>
+        <div class="col-md-2">
+          <img src="assets/clients/swiss.jpg" alt="Companies img" class="myborder kkk zoom" width="165" height="88">  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+    </div>
+  </section>
+</div>

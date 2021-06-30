@@ -1,0 +1,50 @@
+<img src="assets/clients/fid.png" alt="" style="width: 100%;height:40vh;">
+<section class="container pt-4">
+    <h2 class="light-gray text-center">Portfolio and <span class="text-blue">FDI</span> Reports</h2>
+
+    
+    <p class="text-justify">
+        <b>I</b>nfinium Global Research has launched investment and FDI reports to help its clients by providing to ready to use reports in order to take strategic decisions on expansion of their businesses. Investing in the right market at right time is a crucial factor that defines the success of the company in the international and highly competitive markets. The portfolio reports provide clear and in-depth analysis of the most lucrative and most promising markets in the world. Further, these reports focus on modes of entering into several country markets by emphasizing on the analysis of the factors conditions and studying the strategic expansion methods being used by companies operating in those markets. Moreover, the study about legal framework and policy guidelines will help the companies understand the role of governments and policies to enter a particular market.
+    </p>
+    <div class="py-2" >
+        <p class="text-justify">
+            The competitive nature of the international market forces the companies to have a clear idea about the targeted markets. These portfolio reports help companies to choose the right products to enter the right markets. Not just the ready reports, but you can now have an ample opportunity to customize your requirements to get a complete portfolio report on the desired market.
+        </p>
+    </div>
+    </section>
+    
+
+<section class="">
+    <h5 class="text-center">Portfolio Reports</h5>
+    <section>
+        <div class="row m-1">
+            <div class="col-md-4 p-1" *ngFor="let aa of arr  | paginate:{itemsPerPage:10, currentPage:p }">
+                <div class="card ">
+                        <div class=" card-body">
+                            <div>
+                                <h6 class="text-justify"> 
+                                  <a (click)="send_id(this.aa.id)" > {{aa.title}}</a>
+                                </h6>
+                                <div class="light-gray text-center">
+                                <p class="" style="font-size: 13px;"><i class="fa fa-calculator me-2"></i> Report Code: {{aa.report_code}}
+                                    <i class="fa fa-calculator me-2 px-2"></i> Status: Published
+                                    <i class="fa fa-calculator me-2 px-2"></i> Pages: {{aa.pages}}
+                                </p>
+                                    <span class="badge badge-pill badge-warning p-2">Date : {{aa.publish_date}}</span>
+                                </div>
+                                <p class="text-justify" innerHTML="{{aa.short_description}}" > 
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <pagination-controls (pageChange)="p = $event" class="float-right p-3"></pagination-controls>
+<div class=" p-5"></div>
+
+
+
+</section>

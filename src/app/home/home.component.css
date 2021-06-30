@@ -1,0 +1,263 @@
+.category .fa{
+    border:2px solid #9c9c9c;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #272323;
+background: #FFFFFF;
+text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+
+}
+.btn-infi{
+    background-color:#13355b;
+    color:white;
+}
+.text-infi{
+        color: #13355b;
+}
+.we-R{
+    background-image: linear-gradient(to right, lightgray,white);
+}
+.we-R video{
+    width: 40vw;
+    height: 50vh;
+}
+.light-gray{
+    color: rgb(187, 182, 182);
+}
+.btn-outline-dark {
+    color: blue !important;;
+}
+
+
+.fa-quote-left, .fa-quote-right{
+    font-size: 15px;
+    padding: 10px;
+    color:white;
+}
+
+.inner-div{
+    background-color: rgb(230, 224, 224);
+    margin-bottom: 7px;
+    border-radius: 5px;
+    padding: 7px;
+}
+.inner-div:hover{
+    background-color: rgb(202, 57, 246);   
+    color: rgb(240, 223, 223);
+}
+
+.inner-div:hover .fa{
+    background-color: rgb(225, 221, 247);
+    border:2px solid rgb(107, 74, 252);
+    color: rgb(70, 9, 42);
+} 
+
+
+.underline{
+    border-bottom: 3px solid rgb(0, 4, 255);
+}
+.offer{
+    font-weight: bolder;
+    color:tomato;
+}
+.main_banner h1{
+    font-size: 60px;
+    color: orange;
+}
+.main_banner h2{
+    color:white;
+}
+.light_gray{
+    background-color: rgb(240, 235, 235);
+}
+.main_banner .row{
+    background-color: rgba(34, 32, 32,0.8);
+    color:blueviolet;
+}
+.main_banner .col a:hover{
+   color:white;
+}
+
+.home_side_section p{
+    text-align: justify;
+}
+
+.card_box p{
+    font-size: 17px;
+    font-style: italic;
+}
+.orange{
+    background-color: orange;
+}
+.blue{
+    background-color: blue;
+}
+.card{
+    border-top-right-radius:30%;
+    background-color: rgb(233, 227, 227);
+}
+blockquote p{
+    padding-top: 30px;
+}
+.media:hover{
+  background-color:rgb(252, 248, 248);
+}
+
+.client-box{
+    transform: skewY(-3deg);
+    background-image: url('https://www.infiniumglobalresearch.com/infinium/assets/two.gif');
+    background-size: 100% 100%;
+}
+.blur-box{
+    transform: skewY(3deg);
+}
+.img-control{
+    width: 100%;
+    height: 70px;
+    margin: 9px;
+    border-radius: 7px;
+}
+.fa-eye,.fa-rocket{
+    font-size: 40px;
+}
+#nav > .nav-link{
+    color: rgb(9, 20, 29)!important;
+    font-size: 15px;
+    font-weight: bold;
+}
+.text-black{
+    color: black!important;
+}
+.d-f{
+    display: flex;
+    align-items: center;
+}
+.mydemo .carousel-inner{
+    height: 200px;
+}
+.counter-up b{
+    font-size: 50px;
+    color:blueviolet;
+    border: 2px solid white;
+}
+.icon-box{
+    margin: 2px;
+}
+
+.mybox{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-left:15px solid greenyellow;
+    border-right:15px solid greenyellow;
+    border-bottom:15px solid greenyellow;
+    border-top:15px solid gray;
+    padding-top: 9px;
+    margin: 9px;
+}
+.myborder{
+    margin: 2px;
+    border:1px solid lightgray; 
+}
+
+
+.vh{height: 100vh;}
+.counter-up b{
+    
+    animation: move-b 3s ease-in-out  infinite alternate;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    float: left;
+    margin: 10px;
+}
+.gol{
+    width: 10px; height: 10px; border-radius: 50%;
+}
+.bx:hover{
+    transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    transition-delay: .2s;
+    background-color: rgb(20, 20, 100);
+    color: white;
+    position: relative;
+    top:-8px;
+    
+}
+.col{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.bx{
+    border-radius: 4px;
+    padding: 8px;
+    
+}
+.infi-s1{
+    font-size: 40px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: Raleway-bold;
+}
+.we-R p{
+    font-family: Raleway-semibold;
+}
+.infi-p-5{
+    background-color: rgb(253, 108, 82);
+    margin: 1rem;
+    padding: 1rem;
+    border:2px solid rgb(250, 100, 70);
+    box-shadow: 4px 4px 7px rgb(175, 90, 75);
+
+}
+.bg-my{
+    background-color: rgb(243, 249, 250);
+}
+.Raleway-bold{
+    font-family: Raleway-bold;
+}
+.customer{
+    background-color: tomato;
+}
+.carousel-control-prev-icon ,
+.carousel-control-next-icon{
+    background-color: #bcbcbc;
+    padding: 9px;
+    border-radius: 50%;
+}
+@keyframes blink1{
+    100%{opacity: 0.0;}
+}
+
+@media screen and (max-width: 480px) {
+.infi-s1{
+    font-size: 19px;
+}
+    .we-R video{
+        width: 90vw;
+        height: 50vh;
+    }
+   
+   .main_banner h1{
+   
+    padding-top: 10px;
+    }
+     .offer-img{
+         width: 80vw;
+     }
+
+   
+   
+  }

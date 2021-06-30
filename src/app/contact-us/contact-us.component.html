@@ -1,0 +1,125 @@
+<section class="contact_img text-white">
+  <h4 class="text-center pt-5">Contact Us</h4>
+  <p class="text-center">Fill out the form and we'll be in touch as soon as possible.</p>
+  <div class="row m-1">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <div class="card border border-dark">
+        <div class="card-header text-center bg-dark text-white">
+            <h4> Contact Form </h4>
+        </div>
+        <div class="card-body">
+          <form method="post" role="form" [formGroup]="Requestform" (ngSubmit)="onSubmit()">
+            <div class="row ">
+              <div class=" col-md-6 form-group">
+                <input type="text" formControlName="name" class="form-control b-none" [ngClass]="{ 'is-invalid': submitted && f.name.errors }"  placeholder="Enter Name..."/>
+                <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                    <div *ngIf="f.name.errors.required">Name is required</div>
+                </div>      
+              </div>
+              <div class=" col-md-6 form-group">
+                <input type="email" formControlName="email" class="form-control b-none" [ngClass]="{ 'is-invalid': submitted && f.email.errors }"  placeholder="Enter Email..."/>
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required">Email is required</div>
+                </div>
+              </div>
+              <div class=" col-md-6 form-group">
+                <select class="form-control b-none" formControlName="country"   [ngClass]="{ 'is-invalid': submitted && f.country.errors }" placeholder="Select your Category">
+                  <option value="no" selected>Select Country  </option>
+                  <option value="India">India</option>
+                  <option value="USA">USA</option>
+                  <option value="France">France</option>
+                  <option value="Africa">Africa</option>
+                  <option value="Chain">Chain</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Japan">Japan</option>
+                </select>
+                <div *ngIf="submitted && f.country.errors" class="invalid-feedback">
+                  <div *ngIf="f.country.errors.required">Country is required</div>
+              </div>
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="tel" formControlName="contact" class="form-control b-none" [ngClass]="{ 'is-invalid': submitted && f.contact.errors }"  placeholder="Contact No..."/>
+                <div *ngIf="submitted && f.contact.errors" class="invalid-feedback">
+                    <div *ngIf="f.contact.errors.required">Contact is required</div>
+                </div>
+                </div>
+                <div class=" col-md-12 form-group">
+                  <textarea formControlName="message" class="form-control b-none" [ngClass]="{ 'is-invalid': submitted && f.message.errors }"  placeholder="Enter  Message..." rows="3" ></textarea>
+                  <div *ngIf="submitted && f.message.errors" class="invalid-feedback">
+                    <div *ngIf="f.message.errors.required">Message is required</div>
+                   </div>
+                </div>
+              <div class="col-md-3 form-group">
+                <div class="input-group  input-group-sm">
+                   <input type="text" class="form-control" value="1432" readonly >
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="fa fa-refresh"></i></span>
+                 </div>
+               </div>
+              </div>
+              <div class="col-md-6 form-group">
+                <div class="input-group mb-3 input-group-sm">
+                  <input type="text" class="form-control" placeholder="Enter Captacher Code">
+                  <div class="input-group-append">
+                    <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                 </div>
+               </div>
+              </div>
+              <div class="col-md-12 text-center">
+                <input type="submit" value="Submit" class="btn btn-primary btn-sm px-3 m-1">
+                <input type="reset" value="Cancle" class="btn btn-danger btn-sm px-3 m-1">
+                
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</section>
+
+
+<section class=" mt-3 m-1">
+    <div class="card ">
+        <div class="card-header bg-dark text-white  ">
+            <h3 class="text-center">Contact Details</h3>
+        </div>
+        <div class="card-body">
+
+            <div class="row m-1">
+                <div class="col-md-5 text-center">
+                    <h5>Contact Information</h5>
+                    <p>We're here to help and answer your question you might have. We look forward to hearing from you.</p>
+                    <p class="text-justify"> Our team of experts and research analysts is positioned to identify opportunities and motivate our client to devise growth strategies for their future business assignments.</p>
+                    <div class="text-left i-con">
+                      <a href=""> <i class="fa fa-phone"></i>+91 99239 50043</a><br>
+                    <a href=""> <i class="fa fa-envelope"></i> @infiniumglobalresearch.com</a><br>
+                    <a href=""> <i class="fa fa-skype"></i> infiniumglobalresearch</a><br>
+                    <a href=""> <i class="fa fa-map-marker pl-2"></i>
+                  Office No. 103,
+                   Suratwala Mark Plazzo,
+                   Hinjawadi Village, Hinjawadi,
+                   Pune, MH 411057.</a>
+                    </div>
+                
+                  </div>
+                <div class="col-md-7">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1890.8155492379383!2d73.748485!3d18.590663!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xef3ffe4ecc151bbd!2sSuratwala%20Mark%20Plazzo!5e0!3m2!1sen!2sin!4v1620712954013!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" class="border border-secondary"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+  </section>

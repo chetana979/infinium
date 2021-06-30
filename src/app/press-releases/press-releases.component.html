@@ -1,0 +1,39 @@
+<img src="assets/clients/press.jpg" alt="" width="100%" height="300" class="shadow">
+   
+<section class="container">
+   <div class="py-5">
+        <h3 class="text-center">Press Releases</h3>
+    </div>
+    <div class="row m-1 " *ngFor="let aa of arr">
+        <div class="col-md-1  text-right">
+            <button class="btn btn-primary">{{aa.Publish_date|date:'dd.MMM'}}</button>
+        </div>
+        <div class="col-md-11">
+            <div class="card mb-1" >
+                <div class="card-body text-justify">
+                    <h5><a href="">{{aa.Report_title}}</a></h5>
+                    <p class="light-gray"><i class="fa fa-image"></i>  {{aa.Publish_date}}<i class="fa fa-file-text"></i> </p>
+                    <p innerHTML="{{aa.Short_Description}}">.</p>
+                    <a  (click)="send_id(this.aa.Report_id)" class="btn btn-outline-warning btn-sm">Read More</a>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <div class=" p-5">
+        <ul class="pagination justify-content-center">
+            <li class="page-item "><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+    </div>
+</section>
+
+
+ 
+
+
